@@ -25,7 +25,9 @@ CONFIG += staticlib
 QT += gui widgets
 
 mac {
-    QT += macextras
+    !ios {
+        QT += macextras
+    }
 }
 
 HEADERS += \
